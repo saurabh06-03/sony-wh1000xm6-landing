@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sony WH-1000XM6 | Cinematic Product Story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-bg"></div>
+
+  <header id="topNav" class="top-nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand">WH-1000XM6</a>
+      <nav class="nav-links">
+        <a href="#hero">Hero</a>
+        <a href="#story">Engineering</a>
+        <a href="#story">Noise Cancelling</a>
+        <a href="#specs">Specs</a>
+        <a href="#cta">Buy</a>
+      </nav>
+      <a href="#cta" id="heroCtaNav" class="btn-primary small">Experience WH-1000XM6</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero-static">
+      <p class="eyebrow">Sony Flagship Audio</p>
+      <h1 id="heroTitle">Sony WH-1000XM6</h1>
+      <h2 id="heroTagline">Silence, perfected.</h2>
+      <p id="heroDescription" class="lead">Flagship wireless noise cancelling, re-engineered for a world that never stops.</p>
+    </section>
+
+    <section id="story" class="story-wrap">
+      <div class="sticky-stage">
+        <canvas id="productCanvas" aria-hidden="true"></canvas>
+
+        <article class="overlay overlay-left beat" data-beat="engineering">
+          <p class="eyebrow">Engineering Reveal</p>
+          <h3 id="engineeringTitle">Precision-engineered for silence.</h3>
+          <p id="engineeringBody">Custom drivers, sealed acoustic chambers, and optimized airflow deliver studio-grade clarity.</p>
+        </article>
+
+        <article class="overlay overlay-right beat" data-beat="noise">
+          <p class="eyebrow">Noise Cancelling Technology</p>
+          <h3 id="noiseTitle">Adaptive noise cancelling, redefined.</h3>
+          <p id="noiseBody">Multi-microphone analysis adjusts to changing environments so your listening stays uninterrupted.</p>
+        </article>
+
+        <article class="overlay overlay-center beat" data-beat="sound">
+          <p class="eyebrow">Sound Quality</p>
+          <h3 id="soundTitle">Immersive, lifelike sound.</h3>
+          <p id="soundBody">AI-enhanced upscaling restores detail and presence to compressed audio for a richer soundstage.</p>
+        </article>
+
+        <article class="overlay overlay-center beat" data-beat="cta">
+          <p class="eyebrow">Final Assembly</p>
+          <h3>Hear everything. Feel nothing else.</h3>
+          <p class="lead">WH-1000XM6. Designed for focus, crafted for comfort.</p>
+          <div class="cta-row">
+            <a href="#cta" class="btn-primary">Experience WH-1000XM6</a>
+            <a href="#specs" class="btn-secondary">See full specs</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="specs" class="content-section">
+      <div class="content-inner">
+        <p class="eyebrow">Specs</p>
+        <h3>Crafted for flagship performance.</h3>
+        <div id="specGrid" class="spec-grid"></div>
+      </div>
+    </section>
+
+    <section id="cta" class="content-section cta-section">
+      <div class="content-inner cta-inner">
+        <p class="eyebrow">Get In Touch</p>
+        <h3>Ready for WH-1000XM6?</h3>
+        <p class="lead">Submit your interest and our team will contact you for launch updates.</p>
+
+        <form id="contactForm" class="contact-form">
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <textarea name="message" placeholder="Message" rows="4" required></textarea>
+          <button type="submit" class="btn-primary">Send Request</button>
+          <p id="formStatus" class="form-status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
