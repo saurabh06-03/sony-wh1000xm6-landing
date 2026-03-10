@@ -38,8 +38,9 @@ function beatOpacity(progress, start, end) {
 }
 
 function framePath(index) {
-  const id = String(index + 1).padStart(3, "0");
-  return `${FRAME_FOLDER}/ezgif-frame-${id}.jpg`;
+  const frame = String(index + 1).padStart(3, "0");
+ return `${FRAME_FOLDER}/ezgif-frame-${frame}.jpg`;
+}
 }
 
 function preloadFrames() {
