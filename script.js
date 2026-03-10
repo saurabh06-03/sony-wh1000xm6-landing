@@ -39,7 +39,7 @@ function beatOpacity(progress, start, end) {
 
 function framePath(index) {
   const frame = String(index + 1).padStart(3, "0");
-  return `${FRAME_FOLDER}/ezgif-frame-${frame}.jpg`;
+  return `assets/images/ezgif-frame-${frame}.jpg`;
 
 
 }
