@@ -1,4 +1,4 @@
-﻿const FRAME_COUNT = 120;
+﻿const FRAME_COUNT = 240;
 const FRAME_FOLDER = "";
 const CANVAS_BG = "#050505";
 
