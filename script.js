@@ -1,5 +1,5 @@
 ﻿const FRAME_COUNT = 240;
-const FRAME_FOLDER = "assets/images";
+const FRAME_FOLDER = "";
 const CANVAS_BG = "#050505ff";
 
 const canvas = document.getElementById("productCanvas");
@@ -38,7 +38,8 @@ function beatOpacity(progress, start, end) {
 }
 function framePath(index) {
   const frame = String(index + 1).padStart(3, "0");
-  return `assets/images/ezgif-frame-${frame}.jpg`;
+  return `ezgif-frame-${frame}.jpg`;
+
 }
 
 
