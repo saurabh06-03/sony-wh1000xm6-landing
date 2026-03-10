@@ -1,6 +1,6 @@
 ﻿const FRAME_COUNT = 240;
 const FRAME_FOLDER = "assets/images";
-const CANVAS_BG = "#050505";
+const CANVAS_BG = "#050505ff";
 
 const canvas = document.getElementById("productCanvas");
 const ctx = canvas.getContext("2d", { alpha: false });
@@ -36,13 +36,12 @@ function beatOpacity(progress, start, end) {
   const fadeOut = 1 - smoothstep(end - 0.04, end + 0.03, progress);
   return clamp(fadeIn * fadeOut, 0, 1);
 }
-
 function framePath(index) {
   const frame = String(index + 1).padStart(3, "0");
   return `assets/images/ezgif-frame-${frame}.jpg`;
-
-
 }
+
+
 
 function preloadFrames() {
   for (let i = 0; i < FRAME_COUNT; i += 1) {
