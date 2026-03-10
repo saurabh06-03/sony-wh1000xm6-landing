@@ -1,5 +1,5 @@
 ﻿const FRAME_COUNT = 120;
-const FRAME_FOLDER = "assets/images";
+const FRAME_FOLDER = "";
 const CANVAS_BG = "#050505";
 
 const canvas = document.getElementById("productCanvas");
